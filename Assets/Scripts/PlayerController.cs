@@ -15,16 +15,23 @@ public class PlayerController : MonoBehaviour {
 	public float attackTime;
 	private float attackTimeCounter;
 
+	public bool canMove;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
 		myRididbody = GetComponent<Rigidbody2D> ();
-
+		canMove = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		playerMoving = false;
+
+		if (!canMove) {
+			myRididbody.velocity = Vector2.zero;
+			return;
+		}
+
 		if (!attacking) {
 			
 			if (Input.GetAxisRaw ("Horizontal") > 0.5f || Input.GetAxisRaw ("Horizontal") < -0.5f) {

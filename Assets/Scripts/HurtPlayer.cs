@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//comentario por Antoine
+
 public class HurtPlayer : MonoBehaviour {
 
 	public int damageToGive;

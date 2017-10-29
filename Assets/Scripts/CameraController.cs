@@ -12,7 +12,8 @@ public class CameraController : MonoBehaviour {
 	void Start () {
 		
 	}
-	
+	//comentaio random
+	//Por que solo hacemos comentarios random :v
 	// Update is called once per frame
 	void Update () {
 		targetPos = new Vector3 (followTarget.transform.position.x, followTarget.transform.position.y, transform.position.z);
