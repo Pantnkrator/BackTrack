@@ -8,9 +8,21 @@ public class CameraController : MonoBehaviour {
 	private Vector3 targetPos;
 	public float moveSpeed;
 
+	//by antoine para lvl up
+	private static bool cameraExists;
+
 	// Use this for initialization
 	void Start () {
-		
+		//by antoine para cargar lvl
+
+		if (!cameraExists) {
+			cameraExists = true;
+			DontDestroyOnLoad (transform.gameObject);
+		}
+		else {
+			Destroy (gameObject); 
+		}
+
 	}
 	//comentaio random
 	//Por que solo hacemos comentarios random :v

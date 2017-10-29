@@ -11,16 +11,36 @@ public class PlayerController : MonoBehaviour {
 	private bool playerMoving;
 	private Vector2 lastMove;
 
+	//by antoine para pasar lvl
+	private static bool playerExists;
+
+
 	private bool attacking;
 	public float attackTime;
 	private float attackTimeCounter;
 
 	public bool canMove;
+
+	//prueba para la key 
+	public GameObject sword;
+
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
 		myRididbody = GetComponent<Rigidbody2D> ();
 		canMove = true;
+
+		//by antoine para cargar lvl
+		//sword.SetActive (false);
+
+		if (!playerExists) {
+			playerExists = true;
+			DontDestroyOnLoad (transform.gameObject);
+		}
+		else {
+			Destroy (gameObject); 
+		}
+
 	}
 	
 	// Update is called once per frame
@@ -77,5 +97,16 @@ public class PlayerController : MonoBehaviour {
 		anim.SetBool ("PlayerMoving", playerMoving);
 		anim.SetFloat ("LastMoveX", lastMove.x);
 		anim.SetFloat ("LastMoveY", lastMove.y);
+	}
+
+	//antoine
+	void OnCollisionEnter2D(Collision2D other){
+
+		print ("entro 1");
+		if (other.gameObject.tag == "key" ||other.gameObject.name == "key") {
+			print ("entro 2");
+			sword.SetActive (true);
+		}
+
 	}
 }
