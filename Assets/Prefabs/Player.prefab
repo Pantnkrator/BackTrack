@@ -115,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1372766215393048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.688, y: 3.016, z: 0}
+  m_LocalPosition: {x: 8.97, y: -12.18, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4256934535421214}
@@ -252,8 +252,7 @@ MonoBehaviour:
   damageBurst: {fileID: 1066261793084100, guid: 738fbaf5b5eaccf41afd86eedec78a15,
     type: 2}
   hitPoint: {fileID: 4635669842148154}
-  damageNumber: {fileID: 1752573740167090, guid: 5d93df132accfc14484899e819983835,
-    type: 2}
+  damageNumber: {fileID: 0}
 --- !u!114 &114977175521693542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -268,6 +267,7 @@ MonoBehaviour:
   playerMaxHealth: 50
   playerCurrentHealth: 0
   flashLength: 0.25
+  waitToReload: 0
 --- !u!114 &114994695048596204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -282,6 +282,7 @@ MonoBehaviour:
   moveSpeed: 5
   attackTime: 0.5
   canMove: 0
+  sword: {fileID: 0}
 --- !u!212 &212429197395484438
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -311,9 +312,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: 25277931
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300098, guid: 30cbeb599b27a2247819779caca2fd4e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -353,9 +354,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: 25277931
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1faf63da7ecb1d948b638e4ea4185cc2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

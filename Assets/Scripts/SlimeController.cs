@@ -19,9 +19,13 @@ public class SlimeController : MonoBehaviour {
 
 	private GameObject thePlayer;
 
+
+	private Animator anim;
+
 	// Use this for initialization
 	void Start () {
 		myRigibody = GetComponent<Rigidbody2D> ();
+		anim = GetComponent<Animator> ();
 		//timeBetweenMoveCounter = timeBetweenMove;
 		//timeToMoveCounter = timeToMove;
 		timeBetweenMoveCounter=Random.Range(timeBetweenMove*0.75f, timeBetweenMove*1.25f);
@@ -54,6 +58,9 @@ public class SlimeController : MonoBehaviour {
 				thePlayer.SetActive (true);
 			}
 		}
+		anim.SetFloat("MoveX", moveDirection.x);
+		anim.SetFloat("MoveY", moveDirection.y);
+		anim.SetBool ("PlayerMoving", moving);
 	}
 	void OnCollisionEnter2D(Collision2D other){
 		/*

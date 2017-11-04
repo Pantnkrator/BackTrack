@@ -115,6 +115,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114170509405113038, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: quests.Array.size
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 224793332833124880, guid: 680d22473a5205444b26841639348aa3,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -210,9 +215,99 @@ Prefab:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 847555585}
+    - target: {fileID: 114170509405113038, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: quests.Array.data[5]
+      value: 
+      objectReference: {fileID: 1119592146}
+    - target: {fileID: 114333479707333832, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: isItemQuest
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370667509317474, guid: 680d22473a5205444b26841639348aa3, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114170509405113038, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: quests.Array.data[6]
+      value: 
+      objectReference: {fileID: 745543033}
+    - target: {fileID: 224957123310122290, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224957123310122290, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114170509405113038, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: quests.Array.data[7]
+      value: 
+      objectReference: {fileID: 1412080006}
+    - target: {fileID: 224571657097256292, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224248203128057618, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224705236455533588, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224076537796672766, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224095131203677086, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114170509405113038, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: quests.Array.data[8]
+      value: 
+      objectReference: {fileID: 2096865080}
+    - target: {fileID: 114139004471367800, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114209100339060396, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114256167212159914, guid: 680d22473a5205444b26841639348aa3,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 680d22473a5205444b26841639348aa3, type: 2}
   m_IsPrefabParent: 0
+--- !u!224 &289258509 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224680538048683804, guid: 680d22473a5205444b26841639348aa3,
+    type: 2}
+  m_PrefabInternal: {fileID: 289258508}
+--- !u!114 &289258510 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114170509405113038, guid: 680d22473a5205444b26841639348aa3,
+    type: 2}
+  m_PrefabInternal: {fileID: 289258508}
+  m_Script: {fileID: 11500000, guid: b2c518faa35d1f84dab6d9d1e9f4da23, type: 3}
 --- !u!1001 &647418781
 Prefab:
   m_ObjectHideFlags: 0
@@ -264,6 +359,65 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a292553d9a69f504d8646f556392ad08, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &745543031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1432087569366820, guid: 680d22473a5205444b26841639348aa3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 745543032}
+  - component: {fileID: 745543033}
+  m_Layer: 5
+  m_Name: Quest 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &745543032
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224705236455533588, guid: 680d22473a5205444b26841639348aa3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745543031}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 289258509}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &745543033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114256167212159914, guid: 680d22473a5205444b26841639348aa3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745543031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7d6e3d5bd3e9654e93d299f08e7717d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 6
+  theQM: {fileID: 289258510}
+  startText: Busca la fuente de contaminacion radiactiva
+  endText: A la derecha ves una planta nuclear, acercate a ella
+  isItemQuest: 0
+  targetItem: 
+  isEnemyQuest: 0
+  targetEnemy: 
+  enemiesToKill: 0
+  isMultipleItemQuest: 0
+  itemsToCollect: 0
 --- !u!1001 &796625012
 Prefab:
   m_ObjectHideFlags: 0
@@ -317,6 +471,167 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1896423146}
   m_Script: {fileID: 11500000, guid: dc9855f9068ee19469865c376850e45f, type: 3}
+--- !u!1 &1119592144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1432087569366820, guid: 680d22473a5205444b26841639348aa3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1119592145}
+  - component: {fileID: 1119592146}
+  m_Layer: 5
+  m_Name: Quest 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1119592145
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224705236455533588, guid: 680d22473a5205444b26841639348aa3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1119592144}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 289258509}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1119592146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114256167212159914, guid: 680d22473a5205444b26841639348aa3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1119592144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7d6e3d5bd3e9654e93d299f08e7717d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 5
+  theQM: {fileID: 289258510}
+  startText: "Debes detener la contaminacion que erradia la fabrica, busca Nitrogeno
+    para congelar los silos. Los lugare\xF1os ocultaron frascos con este material
+    cerca de los arboles cortados"
+  endText: Bien hecho, con esto podras detener la radiacion que irradia la planta
+  isItemQuest: 0
+  targetItem: Nitrogen
+  isEnemyQuest: 0
+  targetEnemy: 
+  enemiesToKill: 0
+  isMultipleItemQuest: 1
+  itemsToCollect: 3
+--- !u!1001 &1218022850
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224894872159978918, guid: ebd7547d6aff5ed45b6c110acdd9329c,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ebd7547d6aff5ed45b6c110acdd9329c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1290288778
 Prefab:
   m_ObjectHideFlags: 0
@@ -363,11 +678,71 @@ Prefab:
     - target: {fileID: 114538346757873812, guid: a292553d9a69f504d8646f556392ad08,
         type: 2}
       propertyPath: levelToLoad
-      value: lvl1
+      value: lvl1panico
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a292553d9a69f504d8646f556392ad08, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1412080004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1432087569366820, guid: 680d22473a5205444b26841639348aa3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1412080005}
+  - component: {fileID: 1412080006}
+  m_Layer: 5
+  m_Name: Quest 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1412080005
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224705236455533588, guid: 680d22473a5205444b26841639348aa3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412080004}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 289258509}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1412080006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114256167212159914, guid: 680d22473a5205444b26841639348aa3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412080004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7d6e3d5bd3e9654e93d299f08e7717d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 6
+  theQM: {fileID: 289258510}
+  startText: El mounstro que ves mas abajo, es un peligro para todos. Sera mejor que
+    te encargues de el
+  endText: Buen trabajo, ahora la zona es mas segura para todos
+  isItemQuest: 0
+  targetItem: 
+  isEnemyQuest: 1
+  targetEnemy: Boss
+  enemiesToKill: 1
+  isMultipleItemQuest: 0
+  itemsToCollect: 0
 --- !u!1001 &1711449206
 Prefab:
   m_ObjectHideFlags: 0
@@ -419,6 +794,106 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a292553d9a69f504d8646f556392ad08, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1844113164
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224430572168285744, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1022b4f51009d764197aac7c0bc8ce2c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1891821391
 Prefab:
   m_ObjectHideFlags: 0
@@ -463,6 +938,12 @@ Prefab:
       propertyPath: followTarget
       value: 
       objectReference: {fileID: 847555584}
+    - target: {fileID: 114817431324544672, guid: 0f7878c89b4f97348afe0025dc3de386,
+        type: 2}
+      propertyPath: boundBox
+      value: 
+      objectReference: {fileID: 61736919358415406, guid: 0dd3b2ecb57745b47a22751c62bba011,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f7878c89b4f97348afe0025dc3de386, type: 2}
   m_IsPrefabParent: 0
@@ -504,6 +985,17 @@ Prefab:
     - target: {fileID: 4447801453596496, guid: 8d36cfabbcf9d884ca954a23544014fb, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114488894032485898, guid: 8d36cfabbcf9d884ca954a23544014fb,
+        type: 2}
+      propertyPath: damageNumber
+      value: 
+      objectReference: {fileID: 1077765642693510, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+        type: 2}
+    - target: {fileID: 50518824932245076, guid: 8d36cfabbcf9d884ca954a23544014fb,
+        type: 2}
+      propertyPath: m_Mass
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d36cfabbcf9d884ca954a23544014fb, type: 2}
@@ -551,9 +1043,73 @@ Prefab:
       propertyPath: m_Name
       value: lvl2_entry
       objectReference: {fileID: 0}
+    - target: {fileID: 114538346757873812, guid: a292553d9a69f504d8646f556392ad08,
+        type: 2}
+      propertyPath: levelToLoad
+      value: lvl2panico
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a292553d9a69f504d8646f556392ad08, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2096865078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1432087569366820, guid: 4c8587c6a9bc2d243a1999c5e15460c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2096865079}
+  - component: {fileID: 2096865080}
+  m_Layer: 5
+  m_Name: Quest 8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2096865079
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224705236455533588, guid: 4c8587c6a9bc2d243a1999c5e15460c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096865078}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 289258509}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2096865080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114256167212159914, guid: 4c8587c6a9bc2d243a1999c5e15460c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096865078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7d6e3d5bd3e9654e93d299f08e7717d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 8
+  theQM: {fileID: 289258510}
+  startText: destruye las 8 torres! falst pflasdfasdfasdf
+  endText: Mision Cumplida! regresa al portal
+  isItemQuest: 0
+  targetItem: 
+  isEnemyQuest: 1
+  targetEnemy: tower
+  enemiesToKill: 8
+  isMultipleItemQuest: 0
+  itemsToCollect: 0
 --- !u!1001 &2104893093
 Prefab:
   m_ObjectHideFlags: 0

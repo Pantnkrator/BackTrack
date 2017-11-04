@@ -13,16 +13,23 @@ public class PlayerHealthManager : MonoBehaviour {
 
 	private SpriteRenderer playerSprite;
 
+
+	private bool reloading;
+	public float waitToReload;
+
+
 	// Use this for initialization
 	void Start () {
 		playerCurrentHealth = playerMaxHealth;
 		playerSprite = GetComponent<SpriteRenderer> ();
+		reloading = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (playerCurrentHealth <= 0) {
 			gameObject.SetActive (false);
+			reloading = true;
 		}
 		if (flashActive) {
 
@@ -37,6 +44,15 @@ public class PlayerHealthManager : MonoBehaviour {
 				flashActive = false;
 			}
 			flashCounter -= Time.deltaTime;
+		}
+		if (reloading) {
+			waitToReload -= Time.deltaTime;
+			if (waitToReload < 0) {
+				Application.LoadLevel (Application.loadedLevel);
+				gameObject.SetActive (true);
+				reloading = false;
+				SetMaxHealth ();
+			}
 		}
 	}
 

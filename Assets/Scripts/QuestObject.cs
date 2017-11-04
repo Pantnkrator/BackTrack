@@ -18,6 +18,13 @@ public class QuestObject : MonoBehaviour {
 	public int enemiesToKill;
 	private int enemyKillCount;
 
+
+
+	public bool isMultipleItemQuest;
+	public int itemsToCollect;
+	private int itemCollectedCount;
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -37,6 +44,15 @@ public class QuestObject : MonoBehaviour {
 				enemyKillCount++;
 			}
 			if (enemyKillCount >= enemiesToKill) {
+				EndQuest ();
+			}
+		}
+		if (isMultipleItemQuest) {
+			if (theQM.itemCollected == targetItem) {
+				theQM.itemCollected = null;
+				itemCollectedCount++;
+			}
+			if (itemCollectedCount >= itemsToCollect) {
 				EndQuest ();
 			}
 		}
