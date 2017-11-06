@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour {
 
 	public bool canMove;
 
+	private SFXManager sfxman;
 	//prueba para la key 
 	public GameObject sword;
 
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator> ();
 		myRididbody = GetComponent<Rigidbody2D> ();
+		sfxman = FindObjectOfType<SFXManager> (); 
 		canMove = true;
 
 		//by antoine para cargar lvl
@@ -82,6 +84,7 @@ public class PlayerController : MonoBehaviour {
 				attacking = true;
 				myRididbody.velocity = Vector2.zero;
 				anim.SetBool ("Attack", true);
+				sfxman.PlayerAttack.Play(); 
 			}
 		}
 		if (attackTimeCounter > 0) {

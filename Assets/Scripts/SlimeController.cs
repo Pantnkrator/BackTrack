@@ -58,9 +58,9 @@ public class SlimeController : MonoBehaviour {
 				thePlayer.SetActive (true);
 			}
 		}
-		anim.SetFloat("MoveX", moveDirection.x);
+		/*anim.SetFloat("MoveX", moveDirection.x);
 		anim.SetFloat("MoveY", moveDirection.y);
-		anim.SetBool ("PlayerMoving", moving);
+		anim.SetBool ("PlayerMoving", moving);*/
 	}
 	void OnCollisionEnter2D(Collision2D other){
 		/*
