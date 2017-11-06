@@ -5,6 +5,6 @@ using UnityEngine;
 public class Url : MonoBehaviour {
 
 	public void UrlLinkOnWeb(){
-		Application.OpenURL ("https://www.google.com/");  
+		Application.OpenURL ("https://pantnkrator.github.io/history");  
 	}
 }
