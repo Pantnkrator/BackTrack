@@ -21,6 +21,9 @@ public class PlayerController : MonoBehaviour {
 
 	public bool canMove;
 
+
+	private SFXManager sfxMan;
+
 	//prueba para la key 
 	public GameObject sword;
 
@@ -29,6 +32,10 @@ public class PlayerController : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		myRididbody = GetComponent<Rigidbody2D> ();
 		canMove = true;
+
+		sfxMan = FindObjectOfType<SFXManager> ();
+
+
 
 		//by antoine para cargar lvl
 		//sword.SetActive (false);
@@ -82,6 +89,7 @@ public class PlayerController : MonoBehaviour {
 				attacking = true;
 				myRididbody.velocity = Vector2.zero;
 				anim.SetBool ("Attack", true);
+				sfxMan.PlayerAttack.Play ();
 			}
 		}
 		if (attackTimeCounter > 0) {
@@ -101,10 +109,7 @@ public class PlayerController : MonoBehaviour {
 
 	//antoine
 	void OnCollisionEnter2D(Collision2D other){
-
-		print ("entro 1");
 		if (other.gameObject.tag == "key" ||other.gameObject.name == "key") {
-			print ("entro 2");
 			sword.SetActive (true);
 		}
 

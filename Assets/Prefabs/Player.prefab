@@ -115,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1372766215393048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.97, y: -12.18, z: 0}
+  m_LocalPosition: {x: -11.12, y: -12.28, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4256934535421214}
@@ -252,7 +252,8 @@ MonoBehaviour:
   damageBurst: {fileID: 1066261793084100, guid: 738fbaf5b5eaccf41afd86eedec78a15,
     type: 2}
   hitPoint: {fileID: 4635669842148154}
-  damageNumber: {fileID: 0}
+  damageNumber: {fileID: 1077765642693510, guid: 1022b4f51009d764197aac7c0bc8ce2c,
+    type: 2}
 --- !u!114 &114977175521693542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -282,7 +283,7 @@ MonoBehaviour:
   moveSpeed: 5
   attackTime: 0.5
   canMove: 0
-  sword: {fileID: 0}
+  sword: {fileID: 1890499332733552}
 --- !u!212 &212429197395484438
 SpriteRenderer:
   m_ObjectHideFlags: 1

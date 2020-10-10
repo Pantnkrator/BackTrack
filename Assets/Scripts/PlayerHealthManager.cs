@@ -17,19 +17,24 @@ public class PlayerHealthManager : MonoBehaviour {
 	private bool reloading;
 	public float waitToReload;
 
+	private SFXManager sfxMan;
 
 	// Use this for initialization
 	void Start () {
 		playerCurrentHealth = playerMaxHealth;
 		playerSprite = GetComponent<SpriteRenderer> ();
 		reloading = false;
+
+		sfxMan = FindObjectOfType<SFXManager> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (playerCurrentHealth <= 0) {
+			sfxMan.PlayerDead.Play ();
 			gameObject.SetActive (false);
 			reloading = true;
+
 		}
 		if (flashActive) {
 
@@ -61,6 +66,7 @@ public class PlayerHealthManager : MonoBehaviour {
 		playerCurrentHealth -= damageToGive;
 		flashActive = true;
 		flashCounter = flashLength;
+		sfxMan.playerHurt.Play ();
 	}
 	public void SetMaxHealth(){
 		playerCurrentHealth = playerMaxHealth;

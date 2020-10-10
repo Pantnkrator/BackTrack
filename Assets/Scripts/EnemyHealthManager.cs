@@ -27,8 +27,8 @@ public class EnemyHealthManager : MonoBehaviour {
 	void Update () {
 		if (CurrentHealth <= 0) {
 			theQM.enemyKilled = enemyQuestName;
-			Destroy (gameObject);
 			thePlayerStats.addExperience (expToGive);
+			Destroy (gameObject);
 		}
 	}
 

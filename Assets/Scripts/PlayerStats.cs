@@ -36,6 +36,7 @@ public class PlayerStats : MonoBehaviour {
 		}
 	}
 	public void addExperience(int experienceToAdd){
+		print ("POR QUE NO LEVEO"+currentExp);
 		currentExp += experienceToAdd;
 	}
 

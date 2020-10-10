@@ -22,7 +22,6 @@ public class QuestTrigger : MonoBehaviour {
 		if (other.gameObject.name == "Player") {
 			if (!theQM.questCompleted [questNumber]) {
 				if(startQuest && theQM.quests[questNumber].gameObject.activeSelf){
-					print ("entree");
 					theQM.quests [questNumber].gameObject.SetActive (true);
 					theQM.quests [questNumber].StartQuest ();
 				}
